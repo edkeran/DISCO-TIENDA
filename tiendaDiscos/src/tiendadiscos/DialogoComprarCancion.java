@@ -1,4 +1,4 @@
-/*
+    /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -17,8 +17,9 @@ import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 
 /**
- *
- * @author EDGAR
+ *aqui se comprara la cancion 
+ * se maneran los botones necesarios y igualmente los JDialogos
+ * @author EDGAR KREICY
  */
 
 
@@ -33,6 +34,11 @@ public class DialogoComprarCancion extends JDialog implements ActionListener {
     private static final String disc= "disco";
     private static final String artista="artista"; 
     private static final String cancio="musica";
+    
+    /**
+     * constructor
+     * @param aux 
+     */
     public DialogoComprarCancion(menuPrincipal aux) {
         menuPrin=aux;
         art=new comboBox();

@@ -9,8 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
- * @author EDGAR
+ * manejara los discos de cada cantante a crear
+ * @author EDGAR KREICY
+ * @author MICHAEL CARDENAS
  */
 public class NodoDisco {
     private double precio;
@@ -18,9 +19,17 @@ public class NodoDisco {
     private String año;
     NodoCanciones cancion;
     private NodoCanciones aux;
+    /**
+     * creacion de la lista de canciones de cada disco
+     */
     List <NodoCanciones> canciones = new ArrayList<NodoCanciones>();
     
-    
+    /**
+     * Llena la lista con esta informacion
+     * @param nombreC
+     * @param duracion
+     * @param prec 
+     */
     public void nuevaCancion(String nombreC,String duracion,double prec){
         aux= new NodoCanciones();
         aux.setNombreCancion(nombreC);
@@ -28,6 +37,10 @@ public class NodoDisco {
         aux.setDuracion(duracion);
         canciones.add(aux);
     }
+    
+    /**
+     * con ayuda de un for each busca la cancion en la posicion de la lista deseada
+     */
     public void buscarCanciones(){
         for (NodoCanciones ayu: canciones){
             System.out.println(ayu.getNombreCancion());

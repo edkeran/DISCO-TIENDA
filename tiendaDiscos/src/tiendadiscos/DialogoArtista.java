@@ -17,7 +17,8 @@ import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 /**
- * @author EDGAR
+ * se pediran los datos del cantante igualmente la foto aqui se crea el artista
+ * @author EDGAR KREICY
  */
 public class DialogoArtista extends JDialog implements ActionListener {
     private JTextField caja1;
@@ -45,6 +46,10 @@ public class DialogoArtista extends JDialog implements ActionListener {
         generarDialogo(); 
         setVisible(true);
     }
+    
+    /**
+     * lo que el usuario vera y digitara de acuerdo a la informacion a pedir
+     */
     private void generarDialogo(){
         //setLayout(new GridLayout(18,0));
         getContentPane().setLayout(null);
@@ -86,6 +91,10 @@ public class DialogoArtista extends JDialog implements ActionListener {
         getContentPane().add(k);
         k.setBounds(0, 0, 400,400);
     }
+    /**
+     * aqui se definen las acciones de los botones y las ventanas a abrirse al crear los objetos en cada case
+     * @param ae 
+     */
     @Override
     public void actionPerformed(ActionEvent ae) {
        switch(ae.getActionCommand()){
@@ -102,12 +111,14 @@ public class DialogoArtista extends JDialog implements ActionListener {
             dispose();
        break;
            case b1:
+               // Creacion de los objetos para que las ventanas funcionen y salgan a darle click a un boton
                DialogoBusqueda a= new DialogoBusqueda(this);
                break;
        }
        
     }
     protected void imagenArtista(String imagen){
+        // creacion del panel dialogo donde aparecera la imagen del artista
         a= new PanelDialogo(imagen);
     }
 

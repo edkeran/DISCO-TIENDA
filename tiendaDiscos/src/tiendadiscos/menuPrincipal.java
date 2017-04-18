@@ -14,14 +14,22 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 /**
  *
- * @author EDGAR
+* @author  EDGAR KREICY
+ * @author MICHAEL CARDENAS
  */
 public class menuPrincipal extends JFrame {
       private PanelImagen panelImagen;
       private PanelBotones panelBotones;
       NodoArtista a ;
+      /**
+       * aqui se crea la lista principal que es la de artista que tendra lista de discos y esa lista de discos
+       * lista de canciones
+       */
       List<NodoArtista> artistas = new ArrayList<NodoArtista>();
       private double pago;
+      /**
+       * constructor
+       */
     public menuPrincipal() {
         setTitle("DISCO-TIENDA");
         setSize(600, 600);
@@ -34,6 +42,9 @@ public class menuPrincipal extends JFrame {
         getContentPane().add(panelBotones, BorderLayout.WEST);
         setVisible(true);
     }
+    /**
+     * se llena la lista de artistas con estos datos
+    */
     public void ponerArtista(String nombre,String genero,String nacionalidad,String imagen){
         a= new NodoArtista();
         a.setGeneros(genero);

@@ -5,14 +5,18 @@
  */
 package Listas;
 /**
- *
- * @author EDGAR
+ * clase que manejara los datos de las canciones de cada disco de cada cantante
+ * get y set para obtener la informacion de cada disco y setear la informacion
+ * @author EDGAR KREICY
+ * @author MICHAEL CARDENAS
  */
 public class NodoCanciones {
       private String nombreCancion;
       private String duracion;
       private double precio;
-
+/**
+ * Constructor vacio
+ */
       public NodoCanciones() {
         }
 

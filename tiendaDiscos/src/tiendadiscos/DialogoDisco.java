@@ -15,7 +15,8 @@ import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 
 /**
- * @author EDGAR
+ * creacion del disco
+ * @author EDGAR KREICY
  */
 public class DialogoDisco extends JDialog implements ActionListener{
     private menuPrincipal menuPrin;
@@ -23,6 +24,11 @@ public class DialogoDisco extends JDialog implements ActionListener{
     private comboBox art;
     private JButton seleccion;
     NodoArtista artista1;
+    
+    /**
+     * constructor
+     * @param aux 
+     */
     public DialogoDisco(menuPrincipal aux) {
         menuPrin=aux;
         art=new comboBox();
@@ -41,7 +47,10 @@ public class DialogoDisco extends JDialog implements ActionListener{
         add(seleccion,BorderLayout.NORTH);
         setVisible(true);
     }
-
+/**
+ * se definen los metodos y se crean las ventanas necesarias
+ * @param ae 
+ */
     @Override
     public void actionPerformed(ActionEvent ae) {
         nombre=art.getSelectedItem().toString();
@@ -49,7 +58,7 @@ public class DialogoDisco extends JDialog implements ActionListener{
             JOptionPane.showMessageDialog(this, "OPCION NO VALIDA", "MENSAJE", JOptionPane.ERROR_MESSAGE);
         }
         else{
-             DialogoNuevoDisco a = new DialogoNuevoDisco(menuPrin,nombre);
+             DialogoNuevoDisco a = new DialogoNuevoDisco(menuPrin,nombre);//creacion de la ventana para crear discos
              setVisible(false);
              dispose();
         }

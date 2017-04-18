@@ -16,8 +16,8 @@ import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 
 /**
- *
- * @author EDGAR
+ * se pediran los datos necesarios para compra de  un disco
+ * @author EDGAR KREICY
  */
 
 
@@ -30,6 +30,11 @@ public class DialogoComprarDisco extends JDialog implements ActionListener {
     NodoArtista artista1;
     private static final String disc= "disco";
     private static final String artista="artista"; 
+    
+    /**
+     * constructor
+     * @param aux 
+     */
     public DialogoComprarDisco(menuPrincipal aux) {
         menuPrin=aux;
         art=new comboBox();

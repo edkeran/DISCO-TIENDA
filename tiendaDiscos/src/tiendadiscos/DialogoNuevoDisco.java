@@ -15,7 +15,9 @@ import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 /**
- * @author EDGAR
+ * se crera el disco
+ * @author EDGAR KREICY
+ *
  */
 public class DialogoNuevoDisco extends JDialog implements ActionListener{
     private menuPrincipal padre;
@@ -32,6 +34,12 @@ public class DialogoNuevoDisco extends JDialog implements ActionListener{
     private String gen;
     private String nacion;
     private String nombArt;
+    
+    /**
+     * constructor
+     * @param aux
+     * @param artista 
+     */
     
     public DialogoNuevoDisco(menuPrincipal aux, String artista) {
         padre= aux;

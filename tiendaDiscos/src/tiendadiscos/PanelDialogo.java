@@ -15,7 +15,8 @@ import javax.swing.JPanel;
 import javax.swing.border.LineBorder;
 
 /**
- * @author EDGAR
+ * @author  EDGAR KREICY
+ * @author MICHAEL CARDENAS
  */
 public class PanelDialogo extends JDialog{
     private JLabel artista;

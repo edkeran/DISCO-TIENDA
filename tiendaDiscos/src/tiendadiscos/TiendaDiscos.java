@@ -6,8 +6,9 @@
 package tiendadiscos;
 
 /**
- *
- * @author EDGAR
+ * aqui se crea un objeto de tipo menu principal que es el que reune a las demas clases de la interfaz y todas llaman a esta clase
+ * @author  EDGAR KREICY
+ * @author MICHAEL CARDENAS
  */
 public class TiendaDiscos {
 

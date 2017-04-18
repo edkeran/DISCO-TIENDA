@@ -14,8 +14,9 @@ import javax.swing.JPanel;
 import javax.swing.border.LineBorder;
 
 /**
- *
- * @author EDGAR
+ * imagen caracteristica del programa ventana pricnipal
+ *  @author  EDGAR KREICY
+ * @author MICHAEL CARDENAS
  */
 public class PanelImagen extends JPanel {
     private JLabel imagen;

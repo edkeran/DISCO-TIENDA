@@ -6,7 +6,11 @@
 package tiendadiscos;
 
 import javax.swing.JComboBox;
-
+/**
+ * @author  EDGAR KREICY
+ * @author MICHAEL CARDENAS
+ * 
+ */
 public class comboBox extends JComboBox{
     public comboBox() {
        addItem("--------");

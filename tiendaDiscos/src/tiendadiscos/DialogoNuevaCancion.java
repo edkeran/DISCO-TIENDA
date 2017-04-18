@@ -18,8 +18,9 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 /**
- *
- * @author EDGAR
+ *aqui se crea lla cancion
+ * @author EDGAR KREICY
+ * @author MICHAEL CARDENAS
  */
 public class DialogoNuevaCancion extends JDialog implements ActionListener{
     String disco;
@@ -32,6 +33,13 @@ public class DialogoNuevaCancion extends JDialog implements ActionListener{
     JLabel etiqueta3;
     menuPrincipal menu;
     JButton lectura;
+    
+ /**
+  * constructor
+  * @param disco
+  * @param artista
+  * @param aux 
+  */
     public DialogoNuevaCancion(String disco, String artista,menuPrincipal aux) {
         this.menu=aux;
         this.disco = disco;
